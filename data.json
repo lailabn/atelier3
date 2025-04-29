@@ -1,0 +1,12 @@
+{
+  "products": [
+    {"name":"Ordinateur portable", "price":999, "category":"Électronique", "stock":10},
+    {"name":"Smartphone", "price":699, "category":"Électronique", "stock":15},
+    {"name":"Casque audio", "price":149, "category":"Accessoires", "stock":25},
+    {"name":"Clavier mécanique", "price":89, "category":"Périphériques", "stock":8},
+    {"name":"Souris sans fil", "price":45, "category":"Périphériques", "stock":12},
+    {"name":"Moniteur 27\"", "price":249, "category":"Périphériques", "stock":5},
+    {"name":"Tablette tactile", "price":399, "category":"Électronique", "stock":7},
+    {"name":"Disque dur externe", "price":79, "category":"Stockage", "stock":3}
+  ]
+}

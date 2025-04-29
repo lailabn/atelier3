@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Produits</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .controls { display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 8px; border: 1px solid #ddd; }
+        th { background: #f5f5f5; cursor: pointer; }
+        .low { background: #ffdddd; }
+  
+    </style>
+</head>
+<body>
+<h1>Gestion des Produits</h1>
+
+<div class="controls">
+    <select id="filter">
+        <option value="all">Toutes catégories</option>
+    </select>
+    <input type="text" id="search" placeholder="Rechercher produit">
+    <input type="number" id="threshold" value="5" min="1" placeholder="Seuil stock">
+</div>
+
+<div class="chart-container">
+    <canvas id="chart"></canvas>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th data-sort="name">Nom</th>
+        <th data-sort="price">Prix</th>
+        <th data-sort="category">Catégorie</th>
+        <th data-sort="stock">Stock</th>
+    </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
